@@ -21,7 +21,7 @@
 }
 
 
-\def\akbcyear{2020}
+\def\akbcyear{2021}
 \def\akbcsubmission{Under review}
 \newif\ifakbcfinal
 \akbcfinalfalse
@@ -296,8 +296,8 @@
 
 \def\ShortHeadings#1#2{\def\ps@akbcps{\let\@mkboth\@gobbletwo%
 \def\@oddhead{\hfill {\small\sc #1} \hfill}%
-% \def\@oddfoot{\hfill \small\rm \thepage \hfill}%
-\def\@oddfoot{\ifakbcfinal\else\hfill \small\rm \thepage \hfill\fi}%
+\def\@oddfoot{\hfill \small\rm \thepage \hfill}%
+%\def\@oddfoot{\ifakbcfinal\else\hfill \small\rm \thepage \hfill\fi}%
 \def\@evenhead{\hfill {\small\sc 
 \ifakbcfinal
   #2
@@ -305,8 +305,8 @@
   Anonymous authors
 \fi
 } \hfill}%
-% \def\@evenfoot{\hfill \small\rm \thepage \hfill}}%
-\def\@evenfoot{\ifakbcfinal\else\hfill \small\rm \thepage \hfill\fi}}%
+ \def\@evenfoot{\hfill \small\rm \thepage \hfill}}%
+%\def\@evenfoot{\ifakbcfinal\else\hfill \small\rm \thepage \hfill\fi}}%
 \pagestyle{akbcps}}
 
 
